@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'y2_VBl0C5MnI6nBCwZbasT-Sy_ekgAgmyWdSDQI9Iq-HDJyvRwfa6d0IwMhcDJ-1AsACX1PKEw';
+$settings['hash_salt'] = 'GVn3DPhizUxOVFx3b6KbC6KD6Ky3RGOSf7_3eZ1n09HhzKvzZ5ZeiqxlNOaES1t_iBjkEIf50A';
 
 /**
  * Deployment identifier.
@@ -791,9 +791,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
- if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-   include $app_root . '/' . $site_path . '/settings.local.php';
- }
+# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }
 $databases['default']['default'] = array (
   'database' => '13.student.d8c.ru_db',
   'username' => '13.student.d8c.ru_user',
@@ -805,4 +805,4 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_h9ZPerdI-eGqHdjqmxSnGkS3k1O6CeJAdfU8jHqIfMUhkg00KmbNCdl_H3oLLuJxgP5inHWqvg/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_0m-8wOFT34P1zHfQxU8g8RcAzJ0KaJvG4B2qZSBwKwwtnSsnS0W0Uf7QZzMZaIx8vZxCTH_CPg/sync';
