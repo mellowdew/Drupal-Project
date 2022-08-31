@@ -1,5 +1,0 @@
-name: 'custom_content_type '
-description: '5'
-package: custom
-type: module
-core_version_requirement: ^8.8 || ^9

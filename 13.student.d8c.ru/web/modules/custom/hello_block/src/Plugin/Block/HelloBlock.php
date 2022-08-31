@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hello_world\Plugin\Block;
+namespace Drupal\hello_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -26,7 +26,7 @@ class HelloBlock extends BlockBase {
     $request_time = \Drupal::time()->getCurrentTime();
     $date_output = date('d/m/Y', $request_time); 
 
-    $service = \Drupal::service('drupalup_service.cow')->sayHello();
+    $service = \Drupal::service('service_hello.cow')->sayHello();
 
     return [
       '#markup' => $service,

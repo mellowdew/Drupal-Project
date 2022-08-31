@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.doss.bio
+        - field.field.node.doss.post
+        - node.type.doss
+    module:
+        - text
+        - user
+id: node.doss.default
+targetEntityType: node
+bundle: doss
+mode: default
+content:
+    bio:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 102
+        settings: {  }
+        third_party_settings: {  }
+    post:
+        type: string_textfield
+        weight: 101
+        settings: {  }
+        size: 30
+        placeholder: ''
+        third_party_settings: {  }
+hidden: {  }

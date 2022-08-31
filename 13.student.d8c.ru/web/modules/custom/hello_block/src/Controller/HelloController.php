@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Drupal\hello_world\Controller;
+namespace Drupal\hello_block\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
