@@ -1,9 +1,0 @@
-form_api.api:
-  path: '/write_log'
-  defaults:
-    _form:  '\Drupal\write_log\Form\WriteForm'
-    _title: 'AJAX color form'
-  requirements:
-    _permission: 'access content'
-
-

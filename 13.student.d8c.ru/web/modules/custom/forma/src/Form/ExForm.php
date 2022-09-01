@@ -19,18 +19,17 @@ class ExForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['name'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Ваше имя'),
-      '#description' => $this->t('Имя не должно содержать цифр'),
+      '#title' => $this->t('Name'),
       '#required' => TRUE,
     ];
     $form['email'] = [
       '#type' => 'textfield',
-      '#title' => t('Введите ваш e-mail'),
-      '#description' => t('Ваш e-mail идет сюда'),
+      '#title' => t('Email'),
+      '#required' => TRUE,
     ];
     $form['year'] = [
       '#type' => 'select',
-      '#title' => t('Выберете ваш год рождения'),
+      '#title' => t('Year of birth'),
       '#options' => [
         '1999',
         '2000',
@@ -41,43 +40,43 @@ class ExForm extends FormBase {
         '2005',
         '2006',
         '2007',
-        '2008',
-        '2009',
-        '2010',
-        '2020',
+        
       ],
+      '#required' => TRUE,
     ];
-    $form['gender'] = [
+    $form['sex'] = [
       '#type' => 'radios',
-      '#title' => t('Пол'),
-      '#options' => [t('M'), t('Ж')],
+      '#title' => t('Sex'),
+      '#options' => [t('Male'), t('Female')],
+      '#required' => TRUE,
     ];
-    $form['body'] = [
+    $form['limbs'] = [
       '#type' => 'radios',
-      '#title' => t('Кол-во конечностей'),
-      '#options' => [t('4')],
+      '#title' => t('Number of limbs'),
+      '#options' => [t('1'), t('2'), t('3'), t('4'), t('5')],
     ];
-    $form['super'] = [
+    $form['Superpowers'] = [
       '#type' => 'select',
       '#multiple' => TRUE,
-      '#title' => t('Выберете ваш супер способность'),
-      '#options' => ['бессмертие', 'прохождение сквозь стены', 'левитация'],
+      '#title' => t('Superpowers'),
+      '#options' => ['immortality', 'passing through walls', 'levitation'],
     ];
 
     $form['biography'] = [
       '#type' => 'textarea',
-      '#title' => t(' Ваша Биография'),
-      '#description' => t('Вы можите писать ЗДЕСЬ!!!'),
+      '#title' => t('Biography'),
+      
     ];
 
     $form['contract'] = [
       '#type' => 'checkbox',
-      '#title' => t('с контрактом ознакомлен'),
+      '#title' => t('Familiar with the contract'),
+      '#required' => TRUE,
     ];
 
     $form['submit'] = [
       "#type" => "submit",
-      '#value' => $this->t('Отправить'),
+      '#value' => $this->t('Submit'),
     ];
 
     return $form;
@@ -118,7 +117,7 @@ class ExForm extends FormBase {
     $mailManager = \Drupal::service('plugin.manager.mail');
     $params = [];
     $params['context']['from'] = \Drupal::config('system.site')->get('mail');
-    $params['context']['subject'] = 'superpowers form';
+    $params['context']['subject'] = 'Superpowerspowers form';
     $params['context']['message'] ="this user has filled out a form \r\n user name is $user_name\r\n user_mail is $user_mail";
     $send = true;
     $result = $mailManager->mail('system', $key, $to, $langcode, $params, NULL, $send);
