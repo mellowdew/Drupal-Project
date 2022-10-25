@@ -1,5 +1,0 @@
-name: Hello Block
-description: Your first Drupal 9 module.
-package: custom
-type: module
-core_version_requirement: ^8.9 || ^9

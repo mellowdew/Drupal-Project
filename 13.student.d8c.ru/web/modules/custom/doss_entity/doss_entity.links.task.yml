@@ -1,0 +1,22 @@
+entity.doss_entity.settings:
+  title: Settings
+  route_name: entity.doss_entity.settings
+  base_route: entity.doss_entity.settings
+entity.doss_entity.view:
+  title: View
+  route_name: entity.doss_entity.canonical
+  base_route: entity.doss_entity.canonical
+entity.doss_entity.edit_form:
+  title: Edit
+  route_name: entity.doss_entity.edit_form
+  base_route: entity.doss_entity.canonical
+entity.doss_entity.delete_form:
+  title: Delete
+  route_name: entity.doss_entity.delete_form
+  base_route: entity.doss_entity.canonical
+  weight: 10
+entity.doss_entity.collection:
+  title: doss_entity
+  route_name: entity.doss_entity.collection
+  base_route: system.admin_content
+  weight: 10

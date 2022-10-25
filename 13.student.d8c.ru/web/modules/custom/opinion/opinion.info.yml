@@ -1,0 +1,7 @@
+name: opinion
+type: module
+description: 'Provides an opinion entity.'
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: entity.opinion.settings

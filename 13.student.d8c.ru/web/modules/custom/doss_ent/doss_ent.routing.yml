@@ -1,0 +1,7 @@
+entity.doss_ent.settings:
+  path: 'admin/structure/doss-ent'
+  defaults:
+    _form: '\Drupal\doss_ent\Form\DossEntSettingsForm'
+    _title: 'doss_ent'
+  requirements:
+    _permission: 'administer doss_ent'

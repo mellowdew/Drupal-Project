@@ -1,0 +1,5 @@
+type_pizza.add_form:
+  route_name: entity.type_pizza.add_form
+  title: 'Add type_pizza'
+  appears_on:
+    - entity.type_pizza.collection

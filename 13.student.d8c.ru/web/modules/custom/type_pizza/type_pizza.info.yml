@@ -1,0 +1,9 @@
+name: type_pizza
+type: module
+description: 'Provides a type_pizza entity.'
+package: Pizza
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:text
+configure: entity.type_pizza.settings

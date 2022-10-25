@@ -1,0 +1,15 @@
+test.pageAJAX:
+  path: '/testAJAX'
+  defaults:
+    _form: '\Drupal\test\Form\TestForm'
+    _title: 'test (AJAX version)'
+  requirements:
+    _permission: 'access content'
+
+test.settings:
+  path: '/admin/config/test/settings'
+  defaults:
+    _form: '\Drupal\test\Form\SetForm'
+    _title: 'Administer test page'
+  requirements:
+    _permission: 'administer site configuration'

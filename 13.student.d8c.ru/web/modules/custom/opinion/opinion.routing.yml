@@ -1,0 +1,7 @@
+entity.opinion.settings:
+  path: 'admin/structure/opinion'
+  defaults:
+    _form: '\Drupal\opinion\Form\OpinionSettingsForm'
+    _title: 'opinion'
+  requirements:
+    _permission: 'administer opinion'

@@ -1,0 +1,5 @@
+administer type_pizza:
+  title: 'Administer type_pizza settings'
+  restrict access: true
+access type_pizza overview:
+  title: 'Access type_pizza overview page'

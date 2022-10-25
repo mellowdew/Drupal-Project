@@ -1,0 +1,10 @@
+entity.type_pizza.settings:
+  title: type_pizza
+  description: Configure a type_pizza entity type
+  route_name:  entity.type_pizza.settings
+  parent: system.admin_structure
+entity.type_pizza.collection:
+  title: type_pizzas
+  description: List of type_pizzas
+  route_name: entity.type_pizza.collection
+  parent: system.admin_content

@@ -1,0 +1,10 @@
+entity.doss_entity.settings:
+  title: doss_entity
+  description: Configure a doss_entity entity type
+  route_name:  entity.doss_entity.settings
+  parent: system.admin_structure
+entity.doss_entity.collection:
+  title: doss_entities
+  description: List of doss_entities
+  route_name: entity.doss_entity.collection
+  parent: system.admin_content

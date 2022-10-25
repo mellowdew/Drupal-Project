@@ -1,0 +1,5 @@
+opinion.add_form:
+  route_name: entity.opinion.add_form
+  title: 'Add opinion'
+  appears_on:
+    - entity.opinion.collection

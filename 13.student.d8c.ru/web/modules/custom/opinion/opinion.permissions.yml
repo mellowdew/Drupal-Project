@@ -1,0 +1,5 @@
+administer opinion:
+  title: 'Administer opinion settings'
+  restrict access: true
+access opinion overview:
+  title: 'Access opinion overview page'

@@ -1,0 +1,44 @@
+/* Fromt css */
+
+.background-footer{
+    background: #8595a8;
+}
+
+.copyright-wrapper {
+  text-align: center;
+  background-color:  #8595a8;
+  font-size: 18px;
+  margin: 20px 0
+}
+
+.news-wrapper {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 95px;
+}
+
+.news-title {
+    font-size: 20px;
+    padding: 10px 0 5px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.main-region { 
+  margin-left: -80px;
+}
+
+.sidebat-second-region {
+  margin-top: 40px;
+}
+
+.username-wrapper {
+  text-align: center;
+  background-color:  #e9ecef;
+  font-size: 38px;
+  margin: 20px 0
+}
+
+.account-wrapper  {
+  background-color: #657282;
+}

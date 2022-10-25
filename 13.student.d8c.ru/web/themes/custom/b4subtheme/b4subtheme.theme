@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * B4 subtheme theme file.
+ */
+
+
+
+ /**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function b4subtheme_preprocess_block__system_branding_block(&$variables) {
+    $date_formatter = \Drupal::service('date.formatter');
+    $variables['date'] = $date_formatter->format(time());
+    $variables['date'] = substr($variables['date'], 18);
+
+
+    if (substr($variables['date'], 0, 2)>18 || substr($variables['date'], 0, 2)<6) {
+        $variables['timelogo'] = "/sites/default/files/pictures/moonlogo.png";
+    }
+    else {
+        $variables['timelogo'] = "/sites/default/files/pictures/sunlogo.png";
+    }
+
+  }

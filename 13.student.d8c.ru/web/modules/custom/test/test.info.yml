@@ -1,0 +1,6 @@
+name: 'TestForm'
+description: 'tesr'
+package: my
+type: module
+configure: testing.settings
+core_version_requirement: ^8.8 || ^9

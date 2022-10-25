@@ -1,0 +1,23 @@
+<?php
+
+function task9theme_preprocess_block(&$variables) {
+  if ($variables['base_plugin_id'] == 'system_branding_block') {
+    if (in_array(date('H'), range(9, 20))) {
+      $variables['site_logo'] = "/$variables[directory]/logo.svg";
+    }
+    else {
+      $variables['site_logo'] = "/$variables[directory]/drupal.svg";
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function task9theme_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+ if(Drupal::currentUser()->isAuthenticated()){
+    $suggestions[] = 'form__' . $variables['element']['#form_id'];
+ }
+  
+}
+

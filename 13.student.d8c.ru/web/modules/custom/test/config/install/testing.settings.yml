@@ -1,0 +1,21 @@
+Types:
+  1:
+    Name: 'Томатный пирог'
+    Available: '2'
+    Price: '250'
+  2:
+    Name: 'Четыре сезона'
+    Available: '1'
+    Price: '300'
+  3:
+    Name: 'Путанеска'
+    Available: '1'
+    Price: '225'
+  4:
+    Name: 'Пицца с запеченным перцем'
+    Available: '3'
+    Price: '325'
+  5:
+    Name: 'Пицца с завернутыми краями'
+    Available: '0'
+    Price: '400'

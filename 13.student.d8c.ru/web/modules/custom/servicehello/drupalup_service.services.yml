@@ -1,3 +1,3 @@
 services:
-    service_hello.cow:
-        class: Drupal\service_hello\HelloServices
+    drupalup_service.cow:
+        class: Drupal\drupalup_service\HelloServices

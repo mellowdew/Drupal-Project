@@ -1,0 +1,7 @@
+entity.type_pizza.settings:
+  path: 'admin/structure/type-pizza'
+  defaults:
+    _form: '\Drupal\type_pizza\Form\TypePizzaSettingsForm'
+    _title: 'type_pizza'
+  requirements:
+    _permission: 'administer type_pizza'

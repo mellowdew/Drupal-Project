@@ -1,0 +1,5 @@
+administer doss_entity:
+  title: 'Administer doss_entity settings'
+  restrict access: true
+access doss_entity overview:
+  title: 'Access doss_entity overview page'

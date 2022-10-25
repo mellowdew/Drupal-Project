@@ -1,0 +1,22 @@
+entity.opinion.settings:
+  title: Settings
+  route_name: entity.opinion.settings
+  base_route: entity.opinion.settings
+entity.opinion.view:
+  title: View
+  route_name: entity.opinion.canonical
+  base_route: entity.opinion.canonical
+entity.opinion.edit_form:
+  title: Edit
+  route_name: entity.opinion.edit_form
+  base_route: entity.opinion.canonical
+entity.opinion.delete_form:
+  title: Delete
+  route_name: entity.opinion.delete_form
+  base_route: entity.opinion.canonical
+  weight: 10
+entity.opinion.collection:
+  title: opinion
+  route_name: entity.opinion.collection
+  base_route: system.admin_content
+  weight: 10

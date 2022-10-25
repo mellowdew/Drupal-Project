@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present an opinion entity.
+ *
+ * This template is used when viewing a registered opinion's page,
+ * e.g., /admin/content/opinion)/123. 123 being the opinion's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.title'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_opinion()
+ */
+#}
+<article{{ attributes }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</article>

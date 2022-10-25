@@ -23,7 +23,7 @@ class HelloServices {
     $request_time = \Drupal::time()->getCurrentTime();
     $date_output = date('d/m/Y', $request_time); 
 
-    $say_output = "Hello, ".$name." ".$date_output;
+    $say_output = "".$name." ".$date_output;
 
      return $say_output;
   }

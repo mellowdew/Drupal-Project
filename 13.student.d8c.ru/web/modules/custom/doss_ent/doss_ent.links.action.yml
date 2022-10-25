@@ -1,0 +1,5 @@
+doss_ent.add_form:
+  route_name: entity.doss_ent.add_form
+  title: 'Add doss_ent'
+  appears_on:
+    - entity.doss_ent.collection

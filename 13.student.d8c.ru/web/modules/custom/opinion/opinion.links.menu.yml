@@ -1,0 +1,10 @@
+entity.opinion.settings:
+  title: opinion
+  description: Configure an opinion entity type
+  route_name:  entity.opinion.settings
+  parent: system.admin_structure
+entity.opinion.collection:
+  title: opinions
+  description: List of opinions
+  route_name: entity.opinion.collection
+  parent: system.admin_content

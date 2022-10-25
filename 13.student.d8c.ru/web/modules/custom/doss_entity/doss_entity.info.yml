@@ -1,0 +1,7 @@
+name: doss_entity
+type: module
+description: 'Provides a doss_entity entity.'
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: entity.doss_entity.settings
