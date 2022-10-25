@@ -1,0 +1,23 @@
+
+hello_world.hello:
+  path: '/hello_world'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloController::hello'
+    _title: 'Hello World'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'access content'
+
+
+hello_world.uid:
+  path: '/hello_world/uid'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloController::helloid'
+    _title: 'Hello World UID'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'access content'
+    
+
